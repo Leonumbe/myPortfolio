@@ -160,7 +160,7 @@ section .title::after{
 /*----About section stiling----*/
 /* version desktop */
 
-.about, .skills{
+.about, .skills, .projects{
   font-family: 'Poppins', sans-serif;
 }
 .about .title::after{
@@ -170,7 +170,6 @@ section .title::after{
 .skills .skills-content{
   display: flex;
   flex-flow:row wrap;
-  align-items: center;
   justify-content: space-between;
 }
 .about .about-content .left{
@@ -218,7 +217,7 @@ section .title::after{
 
 /*----skills section stiling----*/
 /* version desktop */
-.skills{
+.skills, .projects{
   color: #fff;
   background: #353d45;
 }
@@ -238,7 +237,7 @@ section .title::after{
   border-radius: 6px;
   padding: 20px 25px;
   cursor: pointer;
-  margin: 10px;
+  margin-bottom: 10px;
   transition: all 0.3s ease;
 }
 .skills .skills-content .card:hover{
@@ -265,6 +264,54 @@ section .title::after{
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
+/*----Projects section stiling----*/
+/* version desktop */
+.projects .title::after{
+  content: "My works";
+}
+.projects .title::before{
+  background: #fff;
+}
+.projects .title::after{
+  content: "know how";
+  background: #353d45;
+}
+.projects .carousel .card{
+  background:#222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  transition: all 0.3s ease;
+}
+.projects .carousel .card:hover{
+  background: crimson;
+}
+.projects .carousel .card .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+
+.projects .carousel .card img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+
+}
+.projects .carousel .card .text{
+  font-size: 25px;
+  font-size: 500;
+  margin: 10px 0 7px 0;
+}
+
+
+
 /*--------------------------*/
   /*---Media queries---*/
 @media only screen and (max-width: 1300px){
@@ -348,6 +395,9 @@ section .title::after{
   .about .about-content .right{
     flex: 100%;
   }
+  .skills .skills-content .card{
+    width: calc(50% - 10px);
+  }
 }
 
 
@@ -383,6 +433,11 @@ section .title::after{
     font-size: 20px;
     padding: 8px 25px;
   }
+
+  .skills .skills-content .card{
+    width: 100%;
+  }
+  
 }
 @media only screen and (max-width: 485px){
   .home .home-content .text-1{
@@ -398,6 +453,7 @@ section .title::after{
     font-size: 18px;
     padding: 8px 20px;
   }
+  
 }
 
  /*-----Prop Header------*/
