@@ -1,0 +1,19 @@
+@import "utilities/variables";
+
+//Mapa 2 tipos de botones
+//btA botones cards
+$btA:(
+    color-btA:nth($colorFuente,7),
+    border-radius-btA: 1rem,
+    font-weight-btA: bold,
+    font-size-btA: 1.5rem,
+    background-color-btA:$colorFondo4,
+);
+//btB boton Form
+$btB:(
+    background-color-btB:$colorFondo3,
+    color-btB: nth($colorFuente,12),
+    font-weight-btB: bold,
+    border-radius-btB: 1rem,
+    font-size-btB: 1.15rem,
+);

@@ -1,0 +1,37 @@
+//asociamos utilities a grid index
+@import "../utilities/variables";
+
+
+/*grid index*/
+.contenedorPadreIndex{
+   height: 80vh;
+   display: grid;
+   grid-template-areas:  "header header header header"
+                         "section1 section1 section1 section1"
+                         "main main main main"
+                         "section2 section2 section2 section2"
+                         "section3 section3 section3 section3"
+                         "footer footer footer footer";
+}
+/*Prop Hijos*/
+header{
+   grid-area: header;
+   background-color:$colorFondoHeader;
+   position: sticky;
+   top: 0;
+   z-index: 3;
+}      
+.section1{
+   grid-area: section1;
+}
+.contMainIndex{
+   grid-area: main;
+}
+.section2{
+   grid-area: section2;
+}
+footer{
+   grid-area: footer;
+   font-family: $tipoFuente;
+   background-color: $colorFondoFooter;
+}

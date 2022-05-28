@@ -1,0 +1,55 @@
+//mixin estilo de fondo pared
+@mixin estiloFondo1{
+    background-image: url(../img/pared.jpg);
+    background-size: cover;
+}
+//mixin estilo de fondo madera
+@mixin estiloFondo2{
+    background-image: url(../img/madera.jpg);
+    background-size: cover;
+}
+//mixin fondo faqs
+@mixin estiloFondo3{
+    background-image: url(../img/fondofaqs.webp);
+    background-size: cover;
+}
+//mixin generico flex
+@mixin flexCenter{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+//mixin estilo titulos principales
+@mixin tituloVs768{
+    font-size: 1.5rem;
+    padding: 2rem 5.5rem 1rem; 
+}
+//mixin estilo-parrafos bloques
+@mixin blockP{
+    padding: 1rem;
+    text-align: justify;
+    font-family:'Roboto', sans-serif;
+    font-size: 1rem;
+    //font-weight: bold;
+    color: whitesmoke;
+    background-color: #353d45;
+}
+@mixin logoStile{
+    text-align: center;
+    padding: 0.2rem;
+}
+
+@mixin stileH380{
+    font-family: $tipoFuente;
+    text-align: center;
+    background-color: $colorFondo8;
+    border-top: 1px solid $colorBorde;
+    border-bottom: 1px solid $colorBorde;
+}   
+@mixin h2Sub{
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: nth($colorFuente,13);
+    background-color: $colorFondo4;
+}
