@@ -10,8 +10,12 @@
   padding: 0 80px;
   margin: auto;
 }
+/*----html scroll slow---------*/
+html{
+  scroll-behavior: smooth;
+}
 
-/*----Navbar Styling----*/
+/*----Navbar header Styling----*/
 /*---Version desktop*/
 .navbar{
   position:fixed;
@@ -47,6 +51,7 @@
   display: inline-block;
 }
 .navbar .menu li a{
+  display: block;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -68,13 +73,35 @@
   cursor: pointer;
   display: none;
 }
-
-/*----Cierre-Header----*/
+.scroll-up-btn{
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: crimson;
+  bottom: 10px;
+  right: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 999;
+  font-size: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0,3s ease;
+}
+.scroll-up-btn.show{
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /*-----------------------------*/
 
-/*----Prop-home----*/
+/*-----Home main Stiling---*/
 /*--version desktop*/
+
 .home{
   display: flex;
   background-color: #353d45;
@@ -118,11 +145,11 @@
   color: crimson;
   background: none;
 }
-/*----Cierre-Home----*/
 
 /*--------------------------*/
 
 /*----similar styling code----*/
+/*---overwrite all pages---*/
 section{
   padding: 100px 0;
 }
@@ -156,18 +183,19 @@ section .title::after{
   background: #fff;
   transform: translateX(-50%);
 }
+/*-------------------------------*/
 
 /*----About section stiling----*/
 /* version desktop */
 
-.about, .skills, .projects, .contact{
+.about, .skills, .projects, .contact, footer{
   font-family: 'Poppins', sans-serif;
 }
 .about .title::after{
   content: "who I am";
 }
 .about .about-content,
-.skills .skills-content, .contact, .contact-content{
+.projects .projects-content, .contact, .contact-content{
   display: flex;
   flex-flow:row wrap;
   justify-content: space-between;
@@ -213,80 +241,35 @@ section .title::after{
   background: none;
 }
 
-/*----Cierre-About----*/
+/*-------------------------------*/
 
 /*----skills section stiling----*/
 /* version desktop */
+
 .skills, .projects{
   color: #fff;
   background: #353d45;
 }
+.skills .title::after{
+  content: "";
+}
 .skills .title::before{
   background: #fff;
 }
-
 .skills .title::after{
   content: "know how";
   background: #353d45;
 }
-
-.skills .skills-content .card{
-  width: calc(33% - 20px);
-  background-color: #222;
-  text-align: center;
-  border-radius: 6px;
-  padding: 20px 25px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  transition: all 0.3s ease;
-}
-.skills .skills-content .card:hover{
-  background: crimson;
-}
-.skills .skills-content .card:hover i{
-  color: #fff;
-}
-
-.skills .skills-content .card .box{
-  transition: all 0.3s ease;
-}
-.skills .skills-content .card:hover .box{
-  transform: scale(1.05);
-}
-.skills .skills-content .card i{
-  font-size: 50px;
-  color: crimson;
-  transition: color 0.3s ease;
-}
-
-.skills .skills-content .card .text{
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
-
-/*----Projects section stiling----*/
-/* version desktop */
-.projects .title::after{
-  content: "";
-}
-.projects .title::before{
-  background: #fff;
-}
-.projects .title::after{
-  content: "My works";
-  background: #353d45;
-}
-.projects .carousel .card{
+.skills .carousel .card{
   background:#222;
   border-radius: 6px;
   padding: 25px 35px;
   transition: all 0.3s ease;
 }
-.projects .carousel .card:hover{
+.skills .carousel .card:hover{
   background: crimson;
 }
-.projects .carousel .card .box{
+.skills .carousel .card .box{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -294,21 +277,18 @@ section .title::after{
   text-align: center;
   transition: all 0.3s ease;
 }
-.projects .carousel .card:hover .box{
+.skills .carousel .card:hover .box{
   transform: scale(1.05);
 }
-.projects .carousel .card img{
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid crimson;
-  transition: all 0.3s ease;
+.skills .carousel .card i{
+  font-size: 50px;
+  color: crimson;
+  transition: color 0.3s ease;
 }
-.projects .carousel .card:hover img{
-  border: 5px solid #fff;
+.skills .carousel .card:hover i{
+  color: #fff;
 }
-.projects .carousel .card .text{
+.skills .carousel .card .text{
   font-size: 25px;
   font-size: 500;
   margin: 10px 0 7px 0;
@@ -335,9 +315,63 @@ section .title::after{
   background: crimson!important;
 }
 
+/*----Projects section stiling----*/
+/* version desktop */
+.projects .title::before{
+  background: #fff;
+}
+
+.projects .title::after{
+  content: "My Works";
+  background: #353d45;
+}
+
+.projects .projects-content .card{
+  width: calc(33% - 20px);
+  background-color: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover{
+  background: crimson;
+}
+.projects .projects-content .card:hover i{
+  color: #fff;
+}
+
+.projects .projects-content .card .box{
+  transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover .box{
+  transform: scale(1.05);
+}
+.projects .projects-content .card img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+  transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover img{
+  border: 5px solid #fff;
+}
+
+
+.projects .projects-content .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/*-------------------------------*/
 
 /*----Contact section stiling----*/
 /* version desktop */
+
 .contact .title::after{
   content: "Get in Touch";
 }
@@ -428,15 +462,45 @@ width: calc(50% - 30px);
   color: crimson;
   background: none;
 }
+/*-------------------------------*/
+
+/*----Footer stiling----*/
+/* version desktop */
+
+footer{
+  background: #353d45;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+footer span a{
+  color: crimson;
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
+}
+footer .social{
+  padding: 10px 0;
+
+}
+footer .social i{
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.3s easy;
+  padding: 0 5px;
+}
+footer .social i:hover{
+  transform: scale(1.15);
+  color: crimson;
+}
 
 
+/*-----------------------------*/
 
+/*---Media queries stiling---*/
 
-
-
-
-/*--------------------------*/
-  /*---Media queries---*/
 @media only screen and (max-width: 1300px){
   .home .max-width{
     margin-left: 0px;
@@ -451,12 +515,6 @@ width: calc(50% - 30px);
     width: 350px;
   }
 }
-@media only screen and (max-width: 950px){
-  .max-width{
-    padding: 0 50px;
-  }
-}
-
 
 @media only screen and (max-width: 950px){
   
@@ -474,7 +532,7 @@ width: calc(50% - 30px);
     position: fixed;
     left: -100%;
     top: 0;
-    background: #353d45;
+    background: #333;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -527,7 +585,6 @@ width: calc(50% - 30px);
   }
 }
 
-
 @media only screen and (max-width: 750px){
   .max-width{
     padding: 0 20px;
@@ -542,11 +599,9 @@ width: calc(50% - 30px);
     font-size: 23px;
     padding: 10px 30px;
   }
-  .skills .skills-content .card{
+  .projects .projects-content .card{
     width: calc(50% - 10px);
-    
   }
-
 }
 
 @media only screen and (max-width: 585px){
@@ -560,12 +615,12 @@ width: calc(50% - 30px);
     font-size: 20px;
     padding: 8px 25px;
   }
-
-  .skills .skills-content .card{
+  .projects .projects-content .card{
     width: 100%;
+    margin-bottom: 10px;
   }
-  
 }
+
 @media only screen and (max-width: 485px){
   .home .home-content .text-1{
     font-size: 20px;
@@ -580,57 +635,6 @@ width: calc(50% - 30px);
     font-size: 18px;
     padding: 8px 20px;
   }
-  
 }
-
- /*-----Prop Header------*/
- /*---version tablet*/
-
-/*----cierre-Header----*/
-/*--version tablet*/
 
 /*-----------------------------*/
-
-@media only screen and (min-width: 768px){
-}
- /*----Propiedades header----*/
- /*---Version tablet/desktop*/
-
-/*----Cierre-header----*/
-/*--version tablet/desktop*/
-
-@media only screen and (min-width: 1024px){
-}
-
- /*----Prop-header----*/
- /*--version desktop*/
-
- /*----Cierre-Footer----*/
- /*--version desktop*/
-
- /*-----------------------------*/
-
-/*--------------------------*/
-
-/*----Prop-Error404----*/
-/* version mobile*/
-
-/*----Cierre-Error404----*/
-/*--Version Mobile*/
-
-
-@media only screen and (min-width: 480px){
-}
- /*----Prop-Error404----*/
- /*--Version Tablet*/
-
-/*----Cierre-Error404----*/
-/*--Version tablet*/
-
-@media only screen and (min-width: 1024px){
-}
- /*----Prop-Error404----*/
- /*--Version desktop*/
-
-/*----Cierre-Error404----*/
-/*--Version desktop*/

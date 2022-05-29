@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
     <!--Animacion bootstrap-->
@@ -38,7 +39,9 @@
 </head>
 
 <body> 
-    
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
         <header>
             <nav class="navbar">
                 <div class="max-width">
@@ -46,11 +49,11 @@
                     <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
                     <!--Menu de navegacion + stick-->
                     <ul class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home" class="menu-btn">Home</a></li>
+                        <li><a href="#about"class="menu-btn">About me</a></li>
+                        <li><a href="#skills"class="menu-btn">Skills</a></li>
+                        <li><a href="#projects"class="menu-btn">Projects</a></li>
+                        <li><a href="#contact"class="menu-btn">Contact</a></li>
                     </ul>
                     <div class="menu-btn">
                         <i class="fas fa-bars"></i>
@@ -65,7 +68,7 @@
                 <div class="home-content">
                     <div class="text-1">Hello, my name is</div>
                     <div class="text-2">Leonardo Numbela</div>
-                    <div class="text-3">And, I'm  <span>Web Developer</span> </div>
+                    <div class="text-3">And, I'm a <span class="typing"></span> </div>
                     <a href="#">Hire me</a>
                 </div>
             </div>
@@ -77,10 +80,10 @@
                 <h1 class="title">About Me</h1>
                 <div class="about-content">
                    <div class="column left">
-                        <img src="./img/owner-1.jpg" alt="imagen propia">
+                        <img src="./img/sobo.jpg" alt="imagen propia">
                    </div>
                    <div class="column right">
-                       <div class="text">I'm Leo Numbela and I'm <span>Web Developer</span></div>
+                       <div class="text">I'm Leo Numbela and I'm a <span class="typing2"></span></div>
                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nam voluptates excepturi placeat esse, dolores est dicta earum ipsam repellendus doloremque autem natus, et tempora dignissimos, quas animi corrupti sunt.lorem
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae dolore, repellat at tenetur saepe a. Dolorem delectus dolorum accusantium. Perspiciatis dolorem similique non vero cum enim magni sit eveniet.
                        </p>
@@ -94,39 +97,36 @@
         <section  class="skills" id="skills">
             <div class="max-width">
                 <h1 class="title">Skills</h1>
-                <div class="skills-content">
-                    <div class="card">
+                <div class="carousel owl-carousel">
+                    <div class="card box">
                         <div class="box">
                             <i class="fas fa-code"></i>
                             <div class="text">Web Developer</div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sint, velit ex rem dicta architecto adipisci veritatis asperiores dolorum voluptas porro, fuga placeat perferendis, est suscipit dignissimos ipsum molestias. Quae!</p>
                         </div>
                     </div>  
-                    <div class="card">
+                    <div class="card box">
                         <div class="box">
                             <i class="fas fa-compass"></i>
                             <div class="text">Product Owner</div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sint, velit ex rem dicta architecto adipisci veritatis asperiores dolorum voluptas porro, fuga placeat perferendis, est suscipit dignissimos ipsum molestias. Quae!</p>
                         </div>
                     </div>
-
-                    <div class="card">
+                    <div class="card box">
                         <div class="box">
                             <i class="fas fa-poll"></i>
                             <div class="text">Digital Marketing</div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sint, velit ex rem dicta architecto adipisci veritatis asperiores dolorum voluptas porro, fuga placeat perferendis, est suscipit dignissimos ipsum molestias. Quae!</p>
                         </div>
                     </div>
-
-                    <div class="card">
+                    <div class="card box">
                         <div class="box">
                             <i class="fas fa-ad"></i>
                             <div class="text">Community Manager</div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sint, velit ex rem dicta architecto adipisci veritatis asperiores dolorum voluptas porro, fuga placeat perferendis, est suscipit dignissimos ipsum molestias. Quae!</p>
                         </div>
                     </div>
-
-                    <div class="card">
+                    <div class="card box">
                         <div class="box">
                             <i class="fas fa-search-dollar"></i>
                             <div class="text">Marketing degree</div>
@@ -137,55 +137,39 @@
             </div>
         </section>
         
-        <!--Section 3 Project-->
-        <section class="section3">
-              
-        </section>
-        <section class="projects" id="projects">
+        <!--Section 3 My Projects-->
+        <section  class="projects" id="projects">
             <div class="max-width">
                 <h1 class="title">My Projects</h1>
-                <div class="carousel owl-carousel">
-                    <div class="card box">
+                <div class="projects-content">
+                    <div class="card">
                         <div class="box">
                             <img src="./img/holliwood.JPG" alt="">
                             <div class="text">someone Name</div>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quisquam facilis cupiditate maiores ab aliquid ad voluptatum! Totam praesentium officiis non sit minima! Praesentium animi suscipit saepe nobis dignissimos soluta.</p>
                             </div>
-                    </div>
-                    <div class="card box">
+                    </div>  
+                    <div class="card">
                         <div class="box">
                             <img src="./img/kun.JPG" alt="">
                             <div class="text">someone Name</div>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quisquam facilis cupiditate maiores ab aliquid ad voluptatum! Totam praesentium officiis non sit minima! Praesentium animi suscipit saepe nobis dignissimos soluta.</p>
-                            </div>
+                        </div>
                     </div>
-                    <div class="card box">
+                    <div class="card">
                         <div class="box">
                             <img src="./img/baker.JPG" alt="">
                             <div class="text">someone Name</div>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quisquam facilis cupiditate maiores ab aliquid ad voluptatum! Totam praesentium officiis non sit minima! Praesentium animi suscipit saepe nobis dignissimos soluta.</p>
-                            </div>
+                        </div>
                     </div>
-                    <div class="card box">
-                        <div class="box">
-                            <img src="./img/maverick.JPG" alt="">
-                            <div class="text">someone Name</div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quisquam facilis cupiditate maiores ab aliquid ad voluptatum! Totam praesentium officiis non sit minima! Praesentium animi suscipit saepe nobis dignissimos soluta.</p>
-                            </div>
-                    </div>
-                    <div class="card box">
-                        <div class="box">
-                            <img src="./img/amore.JPG" alt="">
-                            <div class="text">someone Name</div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quisquam facilis cupiditate maiores ab aliquid ad voluptatum! Totam praesentium officiis non sit minima! Praesentium animi suscipit saepe nobis dignissimos soluta.</p>
-                            </div>
-                    </div>
-
                 </div>
             </div>
         </section>
+      
+        <
 
-        <!--detalle de contact us-->
+        <!--Section 4 Contact me-->
         <section class="contact" id="contact">
             <div class="max-width">
                 <h1 class="title">Contact me</h1>
@@ -237,114 +221,24 @@
                             <div class="button">
                                 <button type="submit">Send Message</button>
                             </div>
-                            
                         </form>
                     </div>
                 </div>
             </div>
-
-        </section>
-
-
-
-
-
-
-        <section class="section4">
-                                 
-                            
-                        
-                        <section class="section1">
-                            <!--encabezado sobre formulario envio de mensaje/ ajustar tamano H-->
-                            <div class="subTituloCu">
-                                <h2> WRITE US </h2>
-                            </div>
-                        
-                            <!--complemento bootstrap-Formulario mixeado varios tipos-->
-                            <div class="contFormCu" data-aos="fade-up" >
-                                <form class="g-3 formCu">
-                                    <div class="stileForm">
-                                        <label for="inputName" class="form-label">Name and Surname</label>
-                                        <input type="text" class="form-control" id="inputName" placeholder="Michael J. Fox">
-                                    </div>
-                                    <div class="stileForm">
-                                        <label for="inputEmail4" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail4" placeholder="mjfox@gmail.com">
-                                    </div>
-                                    <div class="stileForm">
-                                        <label for="inputAddress" class="form-label">Address</label>
-                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                    </div>
-                                    <div class="stileForm">
-                                        <label for="inputCity" class="form-label">City</label>
-                                        <input type="text" class="form-control" id="inputCity" placeholder="Santa Barbara">
-                                    </div>
-                                    <div class="stileForm">
-                                        <label for="inputText" class="form-label">Message</label>
-                                        <input type="text" class="form-control" id="inputText" placeholder="Write here your message...">
-                                    </div>
-                                    <div class="bottonForm">
-                                        <button type="submit" class="btnStile">Submit</button>
-                                    </div>
-                                </form>                   
-                            </div>
-                        </section>
-                    </div> 
-        
-                    <section class="section2">
-                    <!--Bottom para volver a la home-->
-                        <div class="backHomeCu" data-aos="fade-up">
-                            <a href="../index.html">
-                            <img src="../img/back-bottom-transformed-100px.png" alt="bottom con flecha hacia la izquierda para volver al homme">
-                            </a>
-                            <p>Back-Home</p>
-                        </div>
-                    </section>              
-            </div>
-        </section>
-
-        <section class="section4">
-            <div>               
-            </div>
-        </section>
-
-        <section class="section5">
-            <div>               
-            </div>
         </section>
 
         <footer>
-            <!--imagen derechos reservados-->    
-            <div class="footerImgC">  
-                <img src="" alt="Logo de los derechos de autor C">
-            </div>
-
-            <!--Detalle de derechos reservados--> 
-            <div class="footerText">    
-                <h3>2022 copyright.</h3> 
-                <h3>Created by <span>LeoNumbela</span></h3> 
-            </div>
-
-            <!--Logo de las redes con enlaces absolutos-->
-            <div class="footerRedes">
-                <a href="" target="_blank">
-                 <img class="sideF" src="img/face-transformed-75px-transformed.png" alt="logo de facebook">
-                </a>
-                <a href="" target="_blank">
-                 <img class="sideI" src="img/inst-transformed-75px-transformed.png" alt="logo de instagram">
-                </a>
+            <span>Create by <a href="#">LeoN.</a> | <span class="far fa-copyright"></span> 2022 All right reserved.</span>
+            <div class="social">
+                <i class="fa-brands fa-linkedin">
+                    <a href=""></a>
+                </i>
+                <i class="fa-brands fa-instagram">
+                    <a href=""></a>
+                </i>
             </div>
         </footer> 
-                                                                                                                                                                                    
-    </div>
 
-    
-    <!--Link de js-->
-    
-    <!--Link de Js Scroll-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init({duration: 1000});</script>
-    
     <!--Link de Jquery-->
     <script src="js/script.js"></script>
 
