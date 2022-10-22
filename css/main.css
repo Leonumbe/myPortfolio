@@ -276,6 +276,7 @@ section .title::after{
   justify-content: center;
   text-align: center;
   transition: all 0.3s ease;
+  height: 20rem;
 }
 .skills .carousel .card:hover .box{
   transform: scale(1.05);
@@ -292,6 +293,12 @@ section .title::after{
   font-size: 25px;
   font-size: 500;
   margin: 10px 0 7px 0;
+}
+.skills .carousel .card p{
+  text-align: justify;
+}
+.textcourses{
+text-align: left;
 }
 .owl-dots{
   text-align: center;
