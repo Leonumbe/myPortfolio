@@ -356,10 +356,10 @@ text-align: left;
   transform: scale(1.05);
 }
 .projects .projects-content .card img{
-  height: 150px;
-  width: 150px;
+  height: 325px;
+  width: 275Px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 10%;
   border: 5px solid crimson;
   transition: all 0.3s ease;
 }
