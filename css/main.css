@@ -338,42 +338,44 @@ text-align: left;
   background-color: #222;
   text-align: center;
   border-radius: 6px;
-  padding: 20px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 1rem 0rem;
 }
 .projects .projects-content .card:hover{
   background: crimson;
+  border: 3px solid whitesmoke;
 }
-.projects .projects-content .card:hover i{
-  color: #fff;
-}
-
 .projects .projects-content .card .box{
   transition: all 0.3s ease;
+  padding: 20px 25px;
 }
 .projects .projects-content .card:hover .box{
   transform: scale(1.05);
 }
 .projects .projects-content .card img{
-  height: 325px;
-  width: 275Px;
-  object-fit: cover;
-  border-radius: 10%;
-  border: 5px solid crimson;
+  height: 350px;
+  width: -webkit-fill-available;
+  object-fit: fill;
+  border-radius: 2%;
+  border: 2px solid #353d45;;
   transition: all 0.3s ease;
 }
 .projects .projects-content .card:hover img{
-  border: 5px solid #fff;
+  border: 2px solid #222;
 }
 
 
 .projects .projects-content .card .text{
   font-size: 25px;
   font-weight: 500;
+  color: white;
   margin: 10px 0 7px 0;
 }
-
+.projects .projects-content .card .textDetail{
+  text-align: left;
+  color: white;
+}
 /*-------------------------------*/
 
 /*----Contact section stiling----*/
