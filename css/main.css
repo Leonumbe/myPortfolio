@@ -335,37 +335,40 @@ text-align: left;
 
 .projects .projects-content .card{
   width: calc(33% - 20px);
-  background-color: #222;
+  background-color:#353d45;
   text-align: center;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 1rem 0rem;
 }
-.projects .projects-content .card:hover{
-  background: crimson;
-  border: 3px solid whitesmoke;
+.projects .projects-content .card .box:hover{
+  margin-top: 1rem;
+  background: #222;
+  border-radius: 8px;
+  border: 1px solid crimson;
 }
+
 .projects .projects-content .card .box{
   transition: all 0.3s ease;
-  padding: 20px 25px;
+  padding: 10px 25px;
 }
 .projects .projects-content .card:hover .box{
   transform: scale(1.05);
 }
 .projects .projects-content .card img{
-  height: 325px;
+  height: auto;
   width: -webkit-fill-available;
   object-fit: fill;
-  border-radius: 2%;
-  border: 2px solid #353d45;;
+  border-radius: 8px;
+  box-shadow: 1px 1px 25px rgb(71, 64, 100);
+  border: 2px solid whitesmoke;
   transition: all 0.3s ease;
 }
 .projects .projects-content .card:hover img{
-  border: 2px solid #222;
+  border: 2px solid crimson;
+  transform: scale(1.03);
 }
-
-
 .projects .projects-content .card .text{
   font-size: 25px;
   font-weight: 500;
@@ -373,7 +376,7 @@ text-align: left;
   margin: 10px 0 7px 0;
 }
 .projects .projects-content .card .textDetail{
-  text-align: justify;
+  text-align: start;
   color: white;
 }
 /*-------------------------------*/
