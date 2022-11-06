@@ -354,7 +354,7 @@ text-align: left;
   transform: scale(1.05);
 }
 .projects .projects-content .card img{
-  height: 350px;
+  height: 325px;
   width: -webkit-fill-available;
   object-fit: fill;
   border-radius: 2%;
@@ -373,7 +373,7 @@ text-align: left;
   margin: 10px 0 7px 0;
 }
 .projects .projects-content .card .textDetail{
-  text-align: left;
+  text-align: justify;
   color: white;
 }
 /*-------------------------------*/
