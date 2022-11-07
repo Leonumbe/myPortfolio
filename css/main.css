@@ -357,7 +357,7 @@ text-align: left;
   transform: scale(1.05);
 }
 .projects .projects-content .card img{
-  height: auto;
+  height: 325px;
   width: -webkit-fill-available;
   object-fit: fill;
   border-radius: 8px;
