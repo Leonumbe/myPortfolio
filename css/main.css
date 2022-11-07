@@ -596,6 +596,9 @@ footer .social i:hover{
     width: 100%;
     margin-bottom: 35px;
   }
+  .projects .projects-content .card{
+    width: calc(50% - 10px);
+  }
 }
 
 @media only screen and (max-width: 750px){
@@ -612,9 +615,7 @@ footer .social i:hover{
     font-size: 23px;
     padding: 10px 30px;
   }
-  .projects .projects-content .card{
-    width: calc(50% - 10px);
-  }
+  
 }
 
 @media only screen and (max-width: 585px){
@@ -628,8 +629,12 @@ footer .social i:hover{
     font-size: 20px;
     padding: 8px 25px;
   }
+  .projects .projects-content{
+    display: flex;
+    justify-content: center;
+  }
   .projects .projects-content .card{
-    width: 100%;
+    width: 75%;
     margin-bottom: 10px;
   }
 }
