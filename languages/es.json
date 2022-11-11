@@ -1,10 +1,32 @@
 {
-           "Navbar":{
-            "menu1":"Menu",
-            "menu2":"Sobre mi",
-            "menu3":"Habilidades",
-            "menu4":"Proyectos",
-            "menu5":"Contactame"
-        }
-    
+    "Navbar":{
+        "menu1":"Menu",
+        "menu2":"Sobre mi",
+        "menu3":"Habilidades",
+        "menu4":"Proyectos",
+        "menu5":"Contactame"
+    },
+    "Home":{
+        "text1":"Hola, mi nombre es",
+        "text2":"Leonardo Numbela",
+        "text3":"y Soy",
+        "text4":"Conoceme +"
+
+    },
+    "About":{
+        "About1":"Sobre Mi",
+        "About2":"Soy Leo Numbela y soy ",
+        "About3":"Actualmente estoy enfocado en ser parte de una empresa de TI, en función de mi trayectoria, he orientado mi perfil hacia Metodologías Ágiles, siendo el rol de Product Owner la puerta de entrada seguida por Digital Mkt y CM. <br>Por otro lado he tomado varios cursos complementarios para completar la formación de Desarrollador Front-End (Desarrollador Web, JavaScripts y React) y el Programa de Especialista en Soporte de Google por Coursera.<br>En cuanto a mi personalidad me considero digno de todo confianza donde me representan valores como la honestidad y el compromiso. Soy titular de un perfil extrovertido, empático, competitivo y con una marcada vocación de orientación al cliente. Si mi perfil despertó tu interés no dudes en contactarme",
+        "About4":"Descargar Cv"
+    },
+    "Skills":{
+        "SkillTitle":"Habilidades"
+    },
+    "Skill1": {
+        "Skill1subtitle":"Desarrollador Web",
+        "Skill1Detail1":"Durante el 2022 comencé mi carrera como desarrollador web finalizando los siguientes cursos:",
+        "Skill1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
+        "Skill1Detail3":"JavaScript",
+        "Skill1Detail4":"React"
+    }
 }

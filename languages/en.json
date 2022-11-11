@@ -1,9 +1,31 @@
 {
-        "Navbar":{
-            "menu1":"Home",
-            "menu2":"About me",
-            "menu3":"Skills",
-            "menu4":"Projects",
-            "menu5":"Contact me"
-        }
+    "Navbar":{
+        "menu1":"Home",
+        "menu2":"About me",
+        "menu3":"Skills",
+        "menu4":"Projects",
+        "menu5":"Contact me"
+    },
+    "Home":{
+        "text1":"Hello, my name is",
+        "text2":"Leonardo Numbela",
+        "text3":"And, I'm a",
+        "text4":"Know me"
+    },
+    "About":{
+        "About1":"About Me",
+        "About2":"I'm Leo Numbela and I'm a ",
+        "About3":"I am currently focused on being part of an IT company, in function of my background, I`ve oriented my profile towards Agile Methodologies, with the role of Product Owner being the gateway followed by Digital Mkt and CM. <br>On the other hands I have taken several complementary courses to complete the Front-End developer training(Web developer, JavaScripts and React) and  the Google Support Specialist Program by coursera.<br>Regarding my personality I consider myself worthy of all trust where values such as honesty and commitment represent me. I am the owner of an extroverted, empathic, competitive profile with a strong customer-oriented vocation. If my profile aroused your interest do not hesitate to contact me",
+        "About4":"Resume"
+    },
+    "Skills":{
+        "SkillTitle":"Skills"
+    },
+    "Skill1": {
+        "Skill1subtitle":"Web Developer",
+        "Skill1Detail1":"During 2022, started my web developer career finishing the following courses:",
+        "Skill1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
+        "Skill1Detail3":"JavaScript",
+        "Skill1Detail4":"React"
+    }
 }

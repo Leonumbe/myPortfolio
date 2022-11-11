@@ -75,10 +75,13 @@
         <main  class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
-                    <div class="text-1">Hello, my name is</div>
-                    <div class="text-2">Leonardo Numbela</div>
-                    <div class="text-3">And, I'm a <span class="typing"></span> </div>
-                    <a href="#about">Know me</a>
+                    <div class="text-1" data-section="Home" data-value="text1">Hello, my name is</div>
+                    <div class="text-2" data-section="Home" data-value="text2">Leonardo Numbela</div>
+                    <div class="contentHomeAnimation">
+                        <div class="text-3" data-section="Home" data-value="text3"> And, I'm a  </div>
+                        <div class="text-3"><span class="typing"></span></div> 
+                    </div>
+                    <a href="#about" class="text-4" data-section="Home" data-value="text4">Know me</a>
                 </div>
             </div>
         </main>
@@ -86,14 +89,17 @@
         <!--Section1 About me-->
         <section  class="about" id="about">
             <div class="max-width">
-                <h1 class="title">About Me</h1>
+                <h1 class="title" data-section="About" data-value="About1">About Me</h1>
                 <div class="about-content">
                    <div class="column left">
                         <img src="./img/sobo.jpg" alt="imagen propia">
                    </div>
                    <div class="column right">
-                       <div class="text">I'm Leo Numbela and I'm a <span class="typing2"></span></div>
-                       <p>I am currently focused on being part of an IT company, in function of my background, I have oriented my profile towards Agile Methodologies, with the role of Product Owner being the gateway followed by Digital Mkt and CM.
+                        <div class="contentHomeAnimation">
+                            <div class="text" data-section="About" data-value="About2">I'm Leo Numbela and I'm a </div>
+                            <div class="text"><span class="typing2"></span></div> 
+                        </div>
+                       <p data-section="About" data-value="About3">I am currently focused on being part of an IT company, in function of my background, I have oriented my profile towards Agile Methodologies, with the role of Product Owner being the gateway followed by Digital Mkt and CM.
                        <br>
                         On the other hands I have taken several complementary courses to complete the Front-End developer training(Web developer, JavaScripts and React) and  the Google Support Specialist Program by coursera.
                        <br>
@@ -101,7 +107,7 @@
                        I am the owner of an extroverted, empathic, competitive profile with a strong customer-oriented vocation.
                        If my profile aroused your interest, do not hesitate to contact me...
                        </p>
-                       <a href="https://drive.google.com/file/d/1qpsx7F_6Xsb1HBA1obFJPdt9CUlwtIJE/view?usp=sharing" target="_blank">Resume</a>
+                       <a href="https://drive.google.com/file/d/1qpsx7F_6Xsb1HBA1obFJPdt9CUlwtIJE/view?usp=sharing" target="_blank" data-section="About" data-value="About4">Resume</a>
                    </div>
                 </div>
             </div>
@@ -110,25 +116,25 @@
         <!--Section 2 Skills-->
         <section  class="skills" id="skills">
             <div class="max-width">
-                <h1 class="title">Skills</h1>
+                <h1 class="title" data-section="Skills" data-value="SkillTitle">Skills</h1>
                 <div class="carousel owl-carousel">
                     <div class="card box">
                         <div class="box">
                             <i class="fas fa-code"></i>
-                            <div class="text">Web Developer</div>
-                            <p>
+                            <div class="text" data-section="Skill1" data-value="Skill1subtitle">Web Developer</div>
+                            <p data-section="Skills1" data-value="Skill1Detail1">
                             During 2022, start my web developer career finishing the following courses:
                             <ul>
                                <br>
-                               <li class="textcourses">
+                               <li class="textcourses" data-section="Skills1" data-value="Skill1Detail2">
                                    Web developer
                                    <br>
                                    HTML5 | CSS | SASS | GIT
                                </li>
-                               <li class="textcourses">
+                               <li class="textcourses" data-section="Skills1" data-value="Skill1Detail3">
                                    JavaScript
                                </li>
-                               <li class="textcourses">
+                               <li class="textcourses" data-section="Skills1" data-value="Skill1Detail4">
                                    React
                                </li>
                             </ul>
