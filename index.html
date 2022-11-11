@@ -14,7 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
-    <!--Animacion bootstrap-->
+    <!--FLAGS in line-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
     
     <!--link a CSS-->    
     <link rel="stylesheet" href="css/main.css ">
@@ -44,16 +45,24 @@
         </div>
         <header>
             <nav class="navbar">
+                <div id="Flags" class="languages">
+                    <div class="FlagsItem" data-language="es">
+                        <span class="fi fi-ar"></span> 
+                    </div>
+                    <div class="FlagsItem" data-language="en">
+                        <span class="fi fi-gb"></span>   
+                    </div>
+                </div>
                 <div class="max-width">
                     <!--logo + btm al index-->
                     <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
                     <!--Menu de navegacion + stick-->
                     <ul class="menu">
-                        <li><a href="#home"     class="menu-btn">Home</a></li>
-                        <li><a href="#about"    class="menu-btn">About me</a></li>
-                        <li><a href="#skills"   class="menu-btn">Skills</a></li>
-                        <li><a href="#projects" class="menu-btn">Projects</a></li>
-                        <li><a href="#contact"  class="menu-btn">Contact</a></li>
+                        <li><a href="#home"     class="menu-btn" data-section="Navbar" data-value="menu1">Home</a></li>
+                        <li><a href="#about"    class="menu-btn" data-section="Navbar" data-value="menu2">About me</a></li>
+                        <li><a href="#skills"   class="menu-btn" data-section="Navbar" data-value="menu3">Skills</a></li>
+                        <li><a href="#projects" class="menu-btn" data-section="Navbar" data-value="menu4">Projects</a></li>
+                        <li><a href="#contact"  class="menu-btn" data-section="Navbar" data-value="menu5">Contact</a></li>
                     </ul>
                     <div class="menu-btn">
                         <i class="fas fa-bars"></i>
@@ -250,7 +259,7 @@
                     <div class="column left">
                         <div class="text">Get in Touch</div>
                             <p>
-                                In case you want to make a return of my portfolio, recommend points for improvement or simply know more about me, do not hesitate to write me.
+                                In case you want to make a feedback of my portfolio, recommend points for improvement or simply know more about me, do not hesitate to write me.
                                 I will gladly contact you.
                             </p>
                         <div class="icons">
@@ -315,7 +324,7 @@
             </div>
         </footer> 
 
-    <!--Link de Jquery-->
+    <!--Link de JS-->
     <script src="js/script.js"></script>
 
 </body>

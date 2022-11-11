@@ -1,0 +1,9 @@
+{
+        "Navbar":{
+            "menu1":"Home",
+            "menu2":"About me",
+            "menu3":"Skills",
+            "menu4":"Projects",
+            "menu5":"Contact me"
+        }
+}

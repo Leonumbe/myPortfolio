@@ -1,11 +1,13 @@
 /*Reset al Css*/
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
-.max-width{
+.max-width, .languages{
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
@@ -17,16 +19,27 @@ html{
 
 /*----Navbar header Styling----*/
 /*---Version desktop*/
+.languages{
+  display: flex;
+  justify-content: end;
+}
+.fi{
+margin: 5px 10px;
+background-size: contain;
+background-position: 50%;
+background-repeat: no-repeat;
+cursor: pointer;
+}
 .navbar{
   position:fixed;
   z-index: 999;
   width: 100%;
-  padding: 30px 0;
+  padding: 10px 0;
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.3s ease;
 }
 .navbar.sticky{
-  padding: 20px 0;
+  padding: 10px 0;
   background: crimson;
 }
 .navbar .max-width{
@@ -530,7 +543,9 @@ footer .social i:hover{
 }
 
 @media only screen and (max-width: 950px){
-  
+  .languages{
+    justify-content: center;
+  }
   .max-width{
     padding: 0 50px;
   }
