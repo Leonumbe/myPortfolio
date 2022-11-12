@@ -10,8 +10,7 @@
         "text1":"Hola, mi nombre es",
         "text2":"Leonardo Numbela",
         "text3":"y Soy",
-        "text4":"Conoceme +"
-
+        "text4":"Conoceme"
     },
     "About":{
         "About1":"Sobre Mi",
@@ -28,5 +27,35 @@
         "Skill1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
         "Skill1Detail3":"JavaScript",
         "Skill1Detail4":"React"
+    },
+    "Skill2": {
+        "Skill2subtitle":"Product Owner",
+        "Skill2Detail1":"La carrera busca desarrollar la vision y estrategias como PO, para crear productos de valor real para el negocio, con un enfoque en la minimización de costos, esfuerzos y riesgos. Generar backlogs de productos. Construyendo Roadmaps y releases con una visión ágil y metodologías de gestión."
+    },
+    "Skill3": {
+        "Skill3subtitle":"Marketing Digital",
+        "Skill3Detail1":"Desarrollar el Plan e implementar el proyecto de transformación digital de un negocio o emprendimiento, crear su presencia en la web junto con las estrategias y tácticas disponibles para aplicar planes efectivos de marketing digital. Habilidades para lograr visitas al sitio web para convertirlas en clientes."
+    },
+    "Skill4": {
+        "Skill4subtitle":"Community Manager",
+        "Skill4Detail1":"Profundizar en el uso de los medios digitales como herramienta de marketing para desarrollar, planificar y ejecutar un Social Media Plan. Analizar el video marketing y su uso en redes sociales. Adquirir la capacidad de curar diferentes contenidos y su aplicación en diferentes redes sociales."
+    },
+    "Skill5": {
+        "Skill5subtitle":"Lic. en Comercializacion",
+        "Skill5Detail1":"Certificar el desarrollo de habilidades y conocimientos para la conducción de procesos de negocio, tanto en la fase operativa como en la fase de planificación. Tener capacidad para asesorar a las empresas, ya sean industriales o de servicios, en todos los procesos de comercialización de bienes o servicios."
+    },
+    "Project":{
+        "ProjectTitle":"Habilidades"
+    },
+    "Projects": {
+        "Projects1subtitle":"Desarrollador Web",
+        "Projects1Detail1":"Durante el 2022 comencé mi carrera como desarrollador web finalizando los siguientes cursos:",
+        "Projects1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
+        "Projects1Detail3":"JavaScript",
+        "Projects1Detail4":"React"
+    },
+    "Typing":{
+        "Typing1":["Desarrollador Web", "Product Owner", "Marketing Digital ", "Community Manager"],
+        "Typing2":["Desarrollador Web", "Product Owner", "Marketing Digital ", "Community Manager"]
     }
 }

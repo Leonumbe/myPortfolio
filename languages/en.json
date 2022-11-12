@@ -9,7 +9,7 @@
     "Home":{
         "text1":"Hello, my name is",
         "text2":"Leonardo Numbela",
-        "text3":"And, I'm a",
+        "text3":"And I'm ",
         "text4":"Know me"
     },
     "About":{
@@ -27,5 +27,35 @@
         "Skill1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
         "Skill1Detail3":"JavaScript",
         "Skill1Detail4":"React"
+    },
+    "Skill2": {
+        "Skill2subtitle":"Product Owner",
+        "Skill2Detail1":"the degree seeks to develop the vision and strategies as PO,  to create products of real value for the business, with a focus on minimizing costs, efforts and risks. Generate product backlogs. Buildings Roadmaps and Releases with an agile vision and management methodologies."
+    },
+    "Skill3": {
+        "Skill3subtitle":"Digital Marketing",
+        "Skill3Detail1":"Develop the Plan and implement the digital transformation project of a business or enterprise, create its presence on the web along with the strategies and tactics available to apply effective digital marketing plans. Skills to achieve  visits to the website to convert them into customers."
+    },
+    "Skill4": {
+        "Skill4subtitle":"Community Manager",
+        "Skill4Detail1":"Deepen the use of digital media as a marketing tool so that this allows them to develop, plan and execute a Social Media Plan. Analyze video marketing and its use in social media. Acquire the ability to curate different content and its application in different social networks."
+    },
+    "Skill5": {
+        "Skill5subtitle":"Marketing degree",
+        "Skill5Detail1":"Certify the development of skills and knowledge for conducting business processes, both in the operational phase and planning phase. Having the capabilities to advise companies, whether industrial or services, in all processes of marketing goods or services"
+    },
+    "Project":{
+        "ProjectTitle":"Habilidades"
+    },
+    "Projects": {
+        "Projects1subtitle":"Desarrollador Web",
+        "Projects1Detail1":"Durante el 2022 comencé mi carrera como desarrollador web finalizando los siguientes cursos:",
+        "Projects1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
+        "Projects1Detail3":"JavaScript",
+        "Projects1Detail4":"React"
+    },
+    "Typing":{
+        "Typing1":["Web Developer", "Product Owner", "Digital Marketing", "Community Manager"],
+        "Typing2":["Web Developer", "Product Owner", "Digital Marketing", "Community Manager"]
     }
 }
