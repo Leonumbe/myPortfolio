@@ -15,7 +15,7 @@
     "About":{
         "About1":"Sobre Mi",
         "About2":"Soy Leo Numbela y soy ",
-        "About3":"Actualmente estoy enfocado en ser parte de una empresa de TI, en función de mi trayectoria, he orientado mi perfil hacia Metodologías Ágiles, siendo el rol de Product Owner la puerta de entrada seguida por Digital Mkt y CM. <br>Por otro lado he tomado varios cursos complementarios para completar la formación de Desarrollador Front-End (Desarrollador Web, JavaScripts y React) y el Programa de Especialista en Soporte de Google por Coursera.<br>En cuanto a mi personalidad me considero digno de todo confianza donde me representan valores como la honestidad y el compromiso. Soy titular de un perfil extrovertido, empático, competitivo y con una marcada vocación de orientación al cliente. Si mi perfil despertó tu interés no dudes en contactarme",
+        "About3":"Actualmente estoy enfocado en formar parte de una empresa IT, en función de mi trayectoria, he orientado mi perfil hacia Metodologías Ágiles, siendo el rol de Product Owner la puerta de entrada seguido por Digital Mkt y CM. <br>Por otro lado he realizado varios cursos complementarios, finalizando la formación de Desarrollador Front-End (Desarrollador Web, JavaScripts y React), ademas realice el Programa de Especialista en Soporte de IT de Google por Coursera.<br>En cuanto a mi personalidad me considero digno de todo confianza donde valores como la honestidad y el compromiso me representan. Soy titular de un perfil extrovertido, empático, competitivo y con una marcada vocación orientada al cliente. Si mi perfil despertó tu interés no dudes en contactarme",
         "About4":"Descargar Cv"
     },
     "Skills":{
@@ -44,18 +44,34 @@
         "Skill5subtitle":"Lic. en Comercializacion",
         "Skill5Detail1":"Certificar el desarrollo de habilidades y conocimientos para la conducción de procesos de negocio, tanto en la fase operativa como en la fase de planificación. Tener capacidad para asesorar a las empresas, ya sean industriales o de servicios, en todos los procesos de comercialización de bienes o servicios."
     },
-    "Project":{
-        "ProjectTitle":"Habilidades"
+    "Projects":{
+        "ProjectTitle":"Mis Proyectos"
     },
-    "Projects": {
-        "Projects1subtitle":"Desarrollador Web",
-        "Projects1Detail1":"Durante el 2022 comencé mi carrera como desarrollador web finalizando los siguientes cursos:",
-        "Projects1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
-        "Projects1Detail3":"JavaScript",
-        "Projects1Detail4":"React"
+    "Project1": {
+        "Project1subtitle":"Bakers Team",
+        "Project1Detail1":"Bakers Team es una SPA, single page Application construida con React. El ecommerce es una tienda online, los productos se encuentran alojados en FireBase. El usuario podrá vivir la experiencia de compra completa, eliminar y agregar productos, consultar el total del pedido y completar la compra llenando un formulario. Se generara un id único para cada transacción y se crea un nuevo objeto en FB con los datos del cliente y los productos."
     },
-    "Typing":{
-        "Typing1":["Desarrollador Web", "Product Owner", "Marketing Digital ", "Community Manager"],
-        "Typing2":["Desarrollador Web", "Product Owner", "Marketing Digital ", "Community Manager"]
+    "Project2": {
+        "Project2subtitle":"Rooms for Rent",
+        "Project2Detail1": "RFR es una landing page creada de manera responsive. Se utilizaron complementos de Bootstrap y Jquery para dar funcionalidad. Se importaron los datos del archivo data.json mediante Fetch y se muestran en el dom dinámicamente, emulando una Api. Cuenta con un búsquedor asociado a dos eventos Onclick y Onchange y un filtro por categoría. Todos los datos se almacenan en el LocalStorage."
+    },
+    "Project3": {
+        "Project3subtitle":"El Atelier Cocina",
+        "Project3Detail1": "Esta es mi primera pagina web, la misma fue creada utilizando HTML5 and CSS.<br> Cuenta con 5 htmls asociados entre si, todos con su correspondiente análisis SEO.<br>Respecto a los complementos, se utilizó Boostraps, Font Awesome and Googlefonts. Cuenta con una grilla de diseño para la exhibición de los componentes replicada en todos los HTMLs y metodología Sass en el Css."
+    },
+    "Project4": {
+        "Project4subtitle":"Product Backlog",
+        "Project4Detail1": "Preparación de los items del product Backlog para la construcción del Sprint.<br>Estimación de Pivot para evitar sesgos y reducir la incertidumbre."
+    },
+    "Project5": {
+        "Project5subtitle":"Social Media Plan",
+        "Project5Detail1": "Resumen de la compania y desarrollo de su Social Media Plan<br>Análisis de público objetivo.<br>Desarrollo de ecosistema digital.<br>FODA y Objetivos."
+    },
+    "Contact":{
+        "ContactTitle":"Contactame",
+        "ContactSubTitle":"Mantente en contacto",
+        "ContactSubTitle2":"Escríbeme...",
+        "ContactText":"En caso de que quieras darme feedback sobre mi portfolio, recomendar puntos a mejorar o simplemente saber más sobre mí, no dudes en escribirme. Con mucho gusto me pondre en contacto contigo!",
+        "ContactBtn":"Enviar Mensaje"
     }
 }

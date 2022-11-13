@@ -410,7 +410,7 @@ text-align: left;
 .contact .contact-content .column{
 width: calc(50% - 30px);
 }
-.contact .contact-content .left .text{
+.contact .contact-content .left .text, .contact .contact-content .right .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -628,6 +628,10 @@ footer .social i:hover{
   }
   .skills .carousel .card .box{
     height: auto;
+  }
+  /*contant me*/
+  .contact .contact-content .left .text, .contact .contact-content .right .text {
+   text-align: start;
   }
 }
 

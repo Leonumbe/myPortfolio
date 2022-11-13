@@ -44,18 +44,34 @@
         "Skill5subtitle":"Marketing degree",
         "Skill5Detail1":"Certify the development of skills and knowledge for conducting business processes, both in the operational phase and planning phase. Having the capabilities to advise companies, whether industrial or services, in all processes of marketing goods or services"
     },
-    "Project":{
-        "ProjectTitle":"Habilidades"
+    "Projects":{
+        "ProjectTitle":"My Projects"
     },
-    "Projects": {
-        "Projects1subtitle":"Desarrollador Web",
-        "Projects1Detail1":"Durante el 2022 comencé mi carrera como desarrollador web finalizando los siguientes cursos:",
-        "Projects1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
-        "Projects1Detail3":"JavaScript",
-        "Projects1Detail4":"React"
+    "Project1": {
+        "Project1subtitle":"Bakers Team",
+        "Project1Detail1":"Bakers Team is a single page Application. It was built with React framework. The e-commerce is an online store where the items are hosted on FireBase. The user will be able to live the complete shopping experience, delete and add products, Check the total order and complete the purchase by filling out a form. A unique id will be generated for each transaction and a new object is created in FB with the customer data and the products."
     },
-    "Typing":{
-        "Typing1":["Web Developer", "Product Owner", "Digital Marketing", "Community Manager"],
-        "Typing2":["Web Developer", "Product Owner", "Digital Marketing", "Community Manager"]
+    "Project2": {
+        "Project2subtitle":"Rooms for Rent",
+        "Project2Detail1": "RFR is a  responsive and landing page. Bootstrap plugins and functionality through Jquery were used. Fetch was created by importing the data from the data.json file and displaying it in the dom dynamically, emulates an Apis-like array. It has a Search associated with two events Onclick and Onchange and a filter by category. All the data is stored in the LocalStorage."
+    },
+    "Project3": {
+        "Project3subtitle":"El Atelier Cocina",
+        "Project3Detail1": "This is my first web project, it was developed using Html5 and CSS for the most part.<br>They are 5 htmls linked to each other and all have their SEO analysis.<br> Regarding plugins, I worked with Boostraps, Fontawesome and Googlefonts.It has a layout made with grid replicated in the 5 html and Sass methodology."
+    },
+    "Project4": {
+        "Project4subtitle":"Product Backlog",
+        "Project4Detail1": "Preparation of product backlog items for the build sprint.<br>Pivot estimation to minimize uncertainty and avoid bias."
+    },
+    "Project5": {
+        "Project5subtitle":"Social Media Plan",
+        "Project5Detail1": "Brief of the company and development of Social Media Plan<br>Target Audience Analysis.<br>Development of digital ecosystem.<br>SWOT and Objectives."
+    },
+    "Contact":{
+        "ContactTitle":"Contact Me",
+        "ContactSubTitle":"Get in Touch",
+        "ContactSubTitle2":"Write Me...",
+        "ContactText":"In case you want to give me feedback of my portfolio, recommend points for improvement or simply know more about me, do not hesitate to write me. I will gladly contact you!",
+        "ContactBtn":"Send Message"
     }
 }

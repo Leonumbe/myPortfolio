@@ -187,15 +187,15 @@
         <!--Section 3 My Projects-->
         <section  class="projects" id="projects">
             <div class="max-width">
-                <h1 class="title">My Projects</h1>
+                <h1 class="title" data-section="Projects" data-value="ProjectTitle">My Projects</h1>
                 <div class="projects-content">
                     <div class="card">
                         <a href="https://hilarious-mousse-d7987d.netlify.app/" target="_blank" rel="noopener noreferrer">
                             <img src="./img/Animation Baker Team.gif" alt="Demo Baker Team">
                             <div class="box">
                                 <div class="text">Bakers Team</div>
-                                <p class="textDetail">
-                                    Bakers Team is a single page Application. It was built with React framework. The e-commerce is an online store where the items are hosted on FireBase. The user will be able to live the complete shopping experience, delete and add products, Check the total order and complete the purchase by filling out a form. A unique id is generated for each transaction and a new object is created in FB with the customer data and the products.
+                                <p class="textDetail" data-section="Project1" data-value="Project1Detail1">
+                                    Bakers Team is a single page Application. It was built with React framework. The ecommerce is an online store where the products are hosted on FireBase. The user will be able to live the complete shopping experience, delete and add products, Check the total order and complete the purchase by filling out a form. A unique id will be generated for each transaction and a new object is created in FB with the customer data and the products.
                                 </p>
                             </div>
                         </a>
@@ -205,7 +205,8 @@
                             <img src="./img/Animation Rooms for Rent.gif" alt="Demo Rooms for Rent">
                             <div class="box">
                                 <div class="text">Rooms for Rent</div>
-                                <p class="textDetail">
+                                <p class="textDetail"
+                                data-section="Project2" data-value="Project2Detail1">
                                 RFR is a  responsive and landing page. Bootstrap plugins and functionality through Jquery were used. Fetch was created by importing the data from the data.json file and displaying it in the dom dynamically, emulates an Apis-like array. It has a Search associated with two events Onclick and Onchange and a filter by category. All the data is stored in the LocalStorage.
                                 </p>
                             </div>
@@ -216,10 +217,11 @@
                             <img src="./img/Animation ElAtelierCocina2.gif" alt="Demo el atelier cocina">
                             <div class="box">
                                 <div class="text">El Atelier Cocina</div>
-                                <p class="textDetail">
-                                    This is my first web project, it was developed using Html 5 and CSS for the most part.
+                                <p class="textDetail"
+                                data-section="Project3" data-value="Project3Detail1">
+                                    This is my first web project, it was developed using Html5 and CSS for the most part.
                                     <br>
-                                    They are 5 html linked to each other and all have their SEO analysis.
+                                    They are 5 htmls linked to each other and all have their SEO analysis.
                                     <br>
                                     Regarding plugins, I worked with Boostraps, Fontawesome and Googlefonts.
                                     It has a layout made with grid replicated in the 5 html and Sass methodology.  
@@ -232,7 +234,8 @@
                             <img src="./img/PO-Backlog.png" alt="Proyecto Product Owner">
                             <div class="box">
                                 <div class="text">Product Backlog</div>
-                                <p class="textDetail">
+                                <p class="textDetail"
+                                data-section="Project4" data-value="Project4Detail1">
                                     Preparation of product backlog items for the build sprint.
                                     <br>
                                     Pivot estimation to minimize uncertainty and avoid bias.   
@@ -245,7 +248,8 @@
                             <img src="./img/Community manager Project.png" alt="Proyecto CM">
                             <div class="box">
                                 <div class="text">Social Media Plan</div>
-                                <p class="textDetail">
+                                <p class="textDetail"
+                                data-section="Project5" data-value="Project5Detail1">
                                     Brief of the company and development of Social Media Plan
                                     <br>
                                     Target Audience Analysis
@@ -263,13 +267,20 @@
         <!--Section 4 Contact me-->
         <section class="contact" id="contact">
             <div class="max-width">
-                <h1 class="title">Contact me</h1>
+                <h1 class="title"
+                data-section="Contact"
+                data-value="ContactTitle"
+                >Contact me</h1>
                 <div class="contact-content">
                     <div class="column left">
-                        <div class="text">Get in Touch</div>
-                            <p>
-                                In case you want to make a feedback of my portfolio, recommend points for improvement or simply know more about me, do not hesitate to write me.
-                                I will gladly contact you.
+                        <div class="text"
+                        data-section="Contact"
+                        data-value="ContactSubTitle"
+                            >Get in Touch</div>
+                            <p data-section="Contact"
+                            data-value="ContactText">
+                                In case you want to give me feedback of my portfolio, recommend points for improvement or simply know more about me, do not hesitate to write me.
+                                I will gladly contact you!
                             </p>
                         <div class="icons">
                             <div class="row">
@@ -296,7 +307,9 @@
                         </div>
                     </div>
                     <div class="column right">
-                        <div class="text">Write Me ...</div>
+                        <div class="text"
+                        data-section="Contact"
+                        data-value="ContactSubTitle2">Write Me ...</div>
                         <form action="#">
                             <div class="fields">
                                 <div class="field name">
@@ -313,7 +326,9 @@
                                 <textarea cols="30" rows="10" placeholder="Describe project..."required></textarea>
                             </div>
                             <div class="button">
-                                <button type="submit">Send Message</button>
+                                <button type="submit"
+                                data-section="Contact"
+                                data-value="ContactBtn">Send Message</button>
                             </div>
                         </form>
                     </div>
