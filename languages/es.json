@@ -26,7 +26,8 @@
         "Skill1Detail1":"Durante el 2022 comencé mi carrera como desarrollador web finalizando los siguientes cursos:",
         "Skill1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
         "Skill1Detail3":"JavaScript",
-        "Skill1Detail4":"React"
+        "Skill1Detail4":"React",
+        "Skill1Detail5":"También he conseguido el Certificado profesional de soporte de IT de Google."
     },
     "Skill2": {
         "Skill2subtitle":"Product Owner",

@@ -23,10 +23,11 @@
     },
     "Skill1": {
         "Skill1subtitle":"Web Developer",
-        "Skill1Detail1":"During 2022, started my web developer career finishing the following courses:",
+        "Skill1Detail1":"During 2022, I started my web developer career finishing the following courses:",
         "Skill1Detail2":" Web developer<br>HTML5 | CSS | SASS | GIT",
         "Skill1Detail3":"JavaScript",
-        "Skill1Detail4":"React"
+        "Skill1Detail4":"React",
+        "Skill1Detail5":"I have also achieved the Google IT Support Professional Certificate."
     },
     "Skill2": {
         "Skill2subtitle":"Product Owner",
